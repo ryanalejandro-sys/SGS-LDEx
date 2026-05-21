@@ -1,1 +1,32 @@
+backend:
+  name: git-gateway
+  branch: main
 
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "settings"
+    label: "Website Content"
+    files:
+
+      - label: "Hero Section"
+        name: "hero"
+        file: "index.html"
+        fields:
+          - label: "Hero Headline Line 1"
+            name: "hero_line1"
+            widget: "string"
+            default: "Learning Experiences That Build"
+          - label: "Hero Headline Line 2 (Red text)"
+            name: "hero_line2"
+            widget: "string"
+            default: "Real Capability."
+          - label: "Hero Body Text"
+            name: "hero_body"
+            widget: "text"
+            default: "LDEx engineers learning experiences that build real capability..."
+          - label: "Hero CTA Button Text"
+            name: "hero_cta"
+            widget: "string"
+            default: "Talk to Our Experts →"
